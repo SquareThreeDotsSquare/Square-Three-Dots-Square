@@ -1,0 +1,166 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue May 30 2023 14:04:54 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6474010beec19d97a6a15fb6" data-wf-site="646d3cee592f0c270e4be816">
+<head>
+  <meta charset="utf-8">
+  <title>[NOW]</title>
+  <meta content="[NOW]" property="og:title">
+  <meta content="[NOW]" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/rumoreisiau.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div>
+    <div>
+      <div class="w-layout-grid grid-22">
+        <div id="w-node-_867cf18f-162f-cc92-dae4-1b7334becf6f-a6a15fb6" class="text-block-17">[NOW]</div>
+        <a id="w-node-_23a9b9b6-f8b9-7e5c-6b19-e9da01e50095-a6a15fb6" href="index.html" class="link-38">[...]</a>
+      </div>
+    </div>
+  </div>
+  <div>
+  <div class="image">
+    <style>
+      #image-container {
+        width: 1920px;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px auto;
+        margin-left: 28px;
+        margin-right: 28px;
+        position: absolute;
+      }
+  
+      #image-container img {
+        width: 990px;
+        height: 990px;
+        margin-bottom: 108px;
+        margin-left: 28px;
+        margin-right: 28px;
+        object-fit: contain;
+      }
+
+      #dida-container {
+        display: flex;
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-bottom: 0px auto;
+        line-height: 56px;
+        gap: 400px;
+      }
+      
+      .left {
+        position: absolute;
+        bottom: 10vh;
+        left: 0;
+      }
+
+      .right {
+        position: absolute;
+        bottom: 10vh;
+        right: 0;
+      }
+
+      h3 {
+    height: 53px;
+    max-width: 1860px;
+    color: black;
+    letter-spacing: -2px;
+    column-count: 1.5;
+    margin-left: 28px;
+    margin-right: 28px;
+    font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 200px;
+    position: static;
+      }
+
+    </style>
+    </div>
+    <div id="image-container">
+        <img id="image" src="" alt="">
+        <div id="dida-container" class="left">
+          <h3 id="dida-place" class=""></h3>
+          <h3 id="dida-time" class=""></h3>
+        </div>
+    </div>
+    <script>
+
+const pathImg = './images/nomeprogetto/';
+
+/*  Mettere qui le immagini, ora e luogo 
+    - Coppia e incolla { ---- }
+    - Cambia con il nome di salvataggio la nuova immagine
+    - Metti l'orario dell'immagine
+    - Metti il luogo dell'immagine esattamente così: isia || taipei
+*/
+const images = [
+  {
+    img: "nomeprogetto_0.jpeg",
+    time: "12:30",
+    place: "isia"
+  },
+  {
+    img: "nomeprogetto_1.jpeg",
+    time: "12:34",
+    place: "taipei"
+  }
+];
+
+
+
+
+
+/* NNON TOCCARE */
+const imageElement = document.getElementById("image");
+const didaContainer = document.getElementById("dida-container");
+const place = document.getElementById("dida-place");
+const time = document.getElementById("dida-time");
+
+let currentIndex = 0;
+
+// Función para mostrar la imagen actual
+function showCurrentImage() {
+
+  didaContainer.classList.remove("right")
+  didaContainer.classList.remove("left")
+  // Actualiza la fuente de la imagen con la imagen actual
+  imageElement.src = pathImg + images[currentIndex].img;
+  time.innerHTML = images[currentIndex].time;
+
+  if(images[currentIndex].place === 'isia') {
+    didaContainer.classList.add("left")
+    place.innerHTML = "ISIA U";
+  } else {
+    didaContainer.classList.add("right")
+    place.innerHTML = "adO/Aptive";
+  }
+
+  // Incrementa el índice de la imagen actual
+  currentIndex++;
+
+  // Verifica si se ha alcanzado el final de las imágenes y reinicia el índice si es necesario
+  if (currentIndex >= images.length) {
+      currentIndex = 0;
+  }
+}
+
+// Mostrar la primera imagen al cargar la página
+showCurrentImage();
+
+// Establecer la función para mostrar la imagen cada 7 segundos
+setInterval(showCurrentImage, 7000);
+
+</script>
+
+</body>
+</html>
