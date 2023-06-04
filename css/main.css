@@ -1,0 +1,38 @@
+@font-face {
+    font-family: customFont;
+    src: url(/fonts/RemixB-Regular-QU-fixed---Copia.TTF);
+  }
+
+*{
+    font-family: customFont;
+    text-decoration: none;
+    margin: 0;
+}
+
+a{
+    color: unset;
+}
+
+a:hover{
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke-width: 0.5px;
+}
+
+
+.homeLay{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97vh;
+}
+
+.div-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+}
