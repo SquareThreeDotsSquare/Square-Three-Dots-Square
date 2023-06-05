@@ -37,3 +37,12 @@ a:hover{
     display: flex;
     flex-direction: column;
 }
+
+.container-nav{
+    z-index: 1;
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
