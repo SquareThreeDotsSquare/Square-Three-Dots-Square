@@ -57,8 +57,6 @@ a:hover{
 
 .text-nav{
     font-size: 90px;
-        font-family: customFont;
-    src: url(/fonts/RemixB-Regular-QU-fixed---Copia.TTF) format("truetype");
 }
 .back{
     -webkit-text-fill-color: white;
