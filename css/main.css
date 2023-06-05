@@ -136,3 +136,9 @@ li{
     line-height: 56px;
     letter-spacing: -2.2px;
 }
+
+.lay{
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+}
