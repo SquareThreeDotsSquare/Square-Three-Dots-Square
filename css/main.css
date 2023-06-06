@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'RemixB-Regular-QU-fixed---Copia.TTF';
-    src: url(/fonts/RemixB-Regular-QU-fixed---Copia.TTF) format("truetype");
+    font-family: 'custom';
+    src: url(/fonts/RemixB-Regular-QU-fixed---Copia.TTF);
   }
 
 *{
-   font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+   font-family: 'custom', sans-serif;
     text-decoration: none;
     margin: 0;
 }
 
 html{
-    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+    font-family: 'custopm', sans-serif;
 }
 
 a{
@@ -80,13 +80,13 @@ a:hover{
     margin-left: 28px;
     margin-right: 28px;
     color: #000;
-    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+    font-family: 'custom', sans-serif;
     font-size: 53px;
     line-height: 56px;
     text-align: justify;
 }
 .heading-text{
-font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+font-family: 'custom', sans-serif;
 height: 53px;
 color: #fff;
 letter-spacing: -2.5px;
@@ -101,18 +101,18 @@ line-height: 56px;
 position: static;
 }
 .list-text{
-    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+    font-family: 'custom', sans-serif;
   text-indent: 28px; /* Regola l'indentazione desiderata in pixel */
     margin-left: 28px;
     margin-right: 28px;
     color: #000;
-    font-family: customFont;
+    font-family: 'custom';
     font-size: 53px;
     line-height: 56px;
 }
 
 li{
-    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+    font-family: 'custom', sans-serif;
     line-height: 56px;
     letter-spacing: -2.2px;
     font-size: 53px;
@@ -121,7 +121,7 @@ li{
 }
 
 .lista{
-    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+    font-family: 'custom', sans-serif;
     margin-left: 70px;
     text-align: justify;
 }
@@ -135,7 +135,7 @@ li{
     justify-content: center;
 }
 .contacts{
-    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+    font-family: 'custom', sans-serif;
     display: flex;
     margin-left: 500px;
     padding-top: 70px;
