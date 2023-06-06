@@ -5,7 +5,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: Remixb Regular Qu Fixed Copia, sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -186,7 +186,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: Remixb Regular Qu Fixed Copia, sans-serif;
   font-size: 1em;
 }
 /* Forms
