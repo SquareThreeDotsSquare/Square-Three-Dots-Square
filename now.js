@@ -1,10 +1,10 @@
 function init() {
   gapi.client.init({
-    apiKey: 'AIzaSyAYlydeqET5qt17nPjbytGUC0fon0u6LLw',
+    apiKey: 'AIzaSyAf7w7I2wXpftJm0ucqH8IkB48CJoVll1Q',
     discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"]
   }).then(function () {
     // Get the folder ID of the Google Drive folder
-    var folderId = '1-V9MFo9wQuX9e1HAyzKtw-8eUDz22y3P';
+    var folderId = '1qFgnsftB_E_E_Julg4F5XmYo8Prx_IJ7';
     // List the files in the folder
     gapi.client.drive.files.list({
       q: "'" + folderId + "' in parents",
