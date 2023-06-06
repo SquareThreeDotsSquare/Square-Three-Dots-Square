@@ -2,7 +2,13 @@
     font-family: customFont;
     src: url(/fonts/RemixB-Regular-QU-fixed---Copia.TTF) format("truetype");
   }
-
+@font-face {
+	font-family: 'Remixb-Regular-Qu-Fixed---Copia.TTF';
+	src: url('Remixb Regular Qu');
+	src: url('Roboto-Bold.eot?#iefix') format('truetype');
+	font-weight: 400-Normal;
+	font-style: normal;
+}
 *{
    font-family: Remixb Regular Qu Fixed Copia, sans-serif;
     text-decoration: none;
