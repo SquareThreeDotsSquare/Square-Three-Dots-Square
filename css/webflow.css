@@ -48,11 +48,15 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #fff;
+  margin-top: auto;
+  letter-spacing: -2.2px;
   font-family: Remixb Regular Qu Fixed Copia, sans-serif;
   font-size: 53px;
   line-height: 56px;
-  color: #333;
+  font-weight: 400;
+  position: static;
+  color: 	#000000;
+  height: 53px;
 }
 img {
   max-width: 100%;
