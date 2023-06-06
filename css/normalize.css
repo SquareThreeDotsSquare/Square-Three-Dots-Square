@@ -5,7 +5,7 @@
  *    without disabling user zoom.
  */
 html {
-  font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+  font-family: customFont;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
