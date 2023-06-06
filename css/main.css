@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'custom';
-    src: url(/fonts/RemixB-Regular-QU-fixed---Copia.TTF);
+    src: url("../fonts/RemixB-Regular-QU-fixed---Copia.TTF");
   }
 
 *{
