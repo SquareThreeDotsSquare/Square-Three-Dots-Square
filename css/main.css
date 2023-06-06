@@ -168,10 +168,24 @@ li{
 
 .lay{
     padding: 200px;
+    width: 100px;
     display: flex;
     justify-content: center;
+}
+
+#images{
+    height: 100%;
+    object-fit: contain;
 }
 
 #first{
     padding-top: 80px;
 }
+
+.contain{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/**NOW PAGE*/

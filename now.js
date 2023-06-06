@@ -1,4 +1,5 @@
 function init() {
+  // Initialize the Google API client library with your API key and discovery document
   gapi.client.init({
     apiKey: 'AIzaSyAf7w7I2wXpftJm0ucqH8IkB48CJoVll1Q',
     discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"]
@@ -24,25 +25,42 @@ function init() {
           var modifiedTime = file.modifiedTime;
           var link = file.webContentLink;
           // Create an image element with the link as the source
-          output += '<img src="' + link + '" alt="' + name + '" id="' + id + '">';
+          output += '<img src="' + link + '" alt="' + name + '" id="' + id + '" class="image">';
+          // Create a div element with the time creation of the photo as the content
+          output += '<div id="time-' + id + '" class="time">' + modifiedTime.slice(11,16) + '</div>';
+          // Create a div element with the text based on the file name as the content
+          output += '<div id="text-' + id + '" class="text">';
+          if (name == "ISIA.jpg") {
+            output += "ISIA U";
+          } else if (name == "TAIPEI.jpg") {
+            output += "adO/Aptive";
+          }
+          output += '</div>';
         }
-        // Get the div element where the images will be displayed
+        // Get the div element where the images and info will be displayed
         var div = document.getElementById('images');
-        var timeStamp = document.getElementById('time')
         // Set the inner HTML of the div to the output
         div.innerHTML = output;
         // Set a variable to store the current index of the image array
         var index = 0;
         // Set a function to cycle through the images every 7 seconds
         function cycleImages() {
-          // Hide all the images
+          // Hide all the images and info
           for (var i = 0; i < files.length; i++) {
             var img = document.getElementById(files[i].id);
+            var time = document.getElementById('time-' + files[i].id);
+            var text = document.getElementById('text-' + files[i].id);
             img.style.display = 'none';
+            time.style.display = 'none';
+            text.style.display = 'none';
           }
-          // Show the image at the current index
+          // Show the image and info at the current index
           var img = document.getElementById(files[index].id);
+          var time = document.getElementById('time-' + files[index].id);
+          var text = document.getElementById('text-' + files[index].id);
           img.style.display = 'block';
+          time.style.display = 'block';
+          text.style.display = 'block';
           // Increment the index by one
           index++;
           // If the index reaches the end of the array, reset it to zero
@@ -50,9 +68,9 @@ function init() {
             index = 0;
           }
         }
-        // Call the function once to show the first image
+        // Call the function once to show the first image and info
         cycleImages();
-        // Set an interval to call the function every 3 seconds
+        // Set an interval to call the function every 7 seconds
         setInterval(cycleImages, 7000);
       } else {
         // No files found
@@ -66,7 +84,8 @@ gapi.load('client', init);
 
 
 
-
+//apiKey: 'AIzaSyAf7w7I2wXpftJm0ucqH8IkB48CJoVll1Q',
+//var folderId = '1qFgnsftB_E_E_Julg4F5XmYo8Prx_IJ7';
 
 
 //old
