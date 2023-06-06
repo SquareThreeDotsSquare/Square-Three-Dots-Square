@@ -4,7 +4,7 @@
   }
 
 *{
-   font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+   font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
     text-decoration: none;
     margin: 0;
 }
@@ -76,7 +76,7 @@ a:hover{
     margin-left: 28px;
     margin-right: 28px;
     color: #000;
-    font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
     font-size: 53px;
     line-height: 56px;
     text-align: justify;
@@ -97,7 +97,7 @@ line-height: 56px;
 position: static;
 }
 .list-text{
-    font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
   text-indent: 28px; /* Regola l'indentazione desiderata in pixel */
     margin-left: 28px;
     margin-right: 28px;
@@ -117,7 +117,7 @@ li{
 }
 
 .lista{
-    font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
     margin-left: 70px;
     text-align: justify;
 }
@@ -131,7 +131,7 @@ li{
     justify-content: center;
 }
 .contacts{
-    font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
     display: flex;
     margin-left: 500px;
     padding-top: 70px;
