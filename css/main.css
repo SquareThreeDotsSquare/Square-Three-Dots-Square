@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+html{
+    font-family: RemixB-Regular-QU-fixed---Copia, sans-serif;
+}
+
 a{
     color: unset;
 }
