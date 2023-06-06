@@ -22,13 +22,16 @@ a:hover{
    -webkit-text-stroke-width: 0.5px;
 }
 
-
 .homeLay{
     margin: 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 94vh;
+    font-size: 90px;
+    line-height: 93px;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .div-block{
@@ -44,12 +47,28 @@ a:hover{
 
 .list{
     display: flex;
+    font-size: 90px;
+    line-height: 93px;
+    letter-spacing: -2px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    mix-blend-mode: lighten;
     flex-direction: column;
+}
+
+.exit{
+    font-size: 90px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    line-height: 93px;
+    letter-spacing: -2px;
 }
 
 /*navigation bar styles*/
 .container-nav{
+    margin-top: 28px;
+    font-size: 90px;
+    line-height: 93px;
     -webkit-text-fill-color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     margin-left: 30px;
     -webkit-text-stroke-width: 2px;
     z-index: 1;
@@ -65,6 +84,9 @@ a:hover{
 .back{
     -webkit-text-fill-color: white;
     font-size: 90px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    line-height: 93px;
+    letter-spacing: -2px;
 }
 
 /*nav bar*/
@@ -127,7 +149,7 @@ li{
 }
 
 .video{
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .tool-body{
@@ -148,4 +170,8 @@ li{
     padding: 200px;
     display: flex;
     justify-content: center;
+}
+
+#first{
+    padding-top: 80px;
 }
