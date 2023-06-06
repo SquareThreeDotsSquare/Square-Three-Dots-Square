@@ -50,7 +50,7 @@ body {
   min-height: 100%;
   margin-top: auto;
   letter-spacing: -2.2px;
-  font-family: Remixb Regular Qu Fixed Copia, sans-serif;
+  font-family: customFont;
   font-size: 53px;
   line-height: 56px;
   font-weight: 400;
