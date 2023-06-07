@@ -54,6 +54,11 @@ function init() {
             time.style.display = 'none';
             text.style.display = 'none';
           }
+          // Ottieni l'orario corrente
+var currentTime = new Date();
+// Aggiungi due ore all'orario corrente
+currentTime.setHours(currentTime.getHours() + 2);
+          
           // Show the image and info at the current index
           var img = document.getElementById(files[index].id);
           var time = document.getElementById('time-' + files[index].id);
@@ -62,7 +67,9 @@ function init() {
           time.style.display = 'block';
           text.style.display = 'block';
 
-                   
+                   // Aggiorna l'orario con l'orario modificato
+time.innerText = currentTime.toLocaleTimeString();
+          
           // Increment the index by one
           index++;
          
