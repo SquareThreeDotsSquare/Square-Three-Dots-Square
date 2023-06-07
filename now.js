@@ -45,7 +45,7 @@ function init() {
         var index = 0;
         // Set a function to cycle through the images every 7 seconds
         function cycleImages() {
-          // Hide all the images and info
+
           for (var i = 0; i < files.length; i++) {
             var img = document.getElementById(files[i].id);
             var time = document.getElementById('time-' + files[i].id);
@@ -54,19 +54,31 @@ function init() {
             time.style.display = 'none';
             text.style.display = 'none';
           }
+        
 
-          // Show the image and info at the current index
           var img = document.getElementById(files[index].id);
           var time = document.getElementById('time-' + files[index].id);
           var text = document.getElementById('text-' + files[index].id);
           img.style.display = 'block';
           time.style.display = 'block';
           text.style.display = 'block';
-          
-          // Increment the index by one
+        
+
+          var modifiedTime = new Date(files[index].modifiedTime);
+          modifiedTime.setHours(modifiedTime.getHours() + 0);
+        
+
+          var hours = modifiedTime.getHours().toString().padStart(2, '0');
+          var minutes = modifiedTime.getMinutes().toString().padStart(2, '0');
+          var formattedTime = hours + ':' + minutes;
+        
+
+          time.textContent = formattedTime;
+        
+
           index++;
-         
-          // If the index reaches the end of the array, reset it to zero
+        
+
           if (index == files.length) {
             index = 0;
           }
