@@ -61,15 +61,8 @@ function init() {
           img.style.display = 'block';
           time.style.display = 'block';
           text.style.display = 'block';
-          
-          
-          // Get the current time in Italian
-          var currentTime = new Date().toLocaleString('it-IT', { hour: 'numeric', minute: 'numeric' });
 
-          // Update the time element with the current time in Italian
-          time.innerText = currentTime;
-          
-          
+                   
           // Increment the index by one
           index++;
          
