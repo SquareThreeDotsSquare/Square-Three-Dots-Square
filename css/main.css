@@ -187,7 +187,7 @@ li{
     flex-direction: row;
     justify-content: center;
 }
-/**NOW PAGE*/
+/** archive page **/
 
 .timeSX{
     grid-column: 2;
@@ -199,7 +199,7 @@ li{
     background-color: orange;
 }
 
-/** archive page **/
+
 .archive-container {
     font-size: 28px;
     padding-top: 120px;
@@ -211,11 +211,15 @@ li{
     background-color: green;
   }
   
-div>.img-hover{
-    display: none;
+.img-hover{
+    width: 300px;
 }
 
-div:hover > .img-hover{
-    display: block;
-    height: 300px;
-  }
+.description{
+    font-size: 12px;
+}
+
+.card{
+    width: 300px;
+    display: none;
+}
