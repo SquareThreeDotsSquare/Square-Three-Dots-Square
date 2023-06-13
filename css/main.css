@@ -190,11 +190,6 @@ li{
     padding-top: 80px;
 }
 
-.contain{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 /** archive page **/
 
 .timeSX{

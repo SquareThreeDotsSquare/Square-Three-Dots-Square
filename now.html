@@ -4,29 +4,58 @@
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="now.js"></script>
   <style>
-    .image {
-      margin-top: 80px;
-      width: 800px;
-      height: 600px;
+    #images > img {
+      height: 100%;
       z-index: -3;
-      object-fit: contain;
+      object-fit: cover;
     }
     .time {
       position: absolute;
-      bottom: 45px;
-      left: 350px;
+      bottom: -2.5vh;
+      left: 11vw;
       flex-direction: row;
       color: black;
       font-size: 34px;
     }
-    .text {
+    .timeDX{
       position: absolute;
-      left: 40px;
-      bottom: 24px;
+      bottom: -2.5vh;
+      left: 65.1vw;
+      flex-direction: row;
+      color: black;
+      font-size: 34px;
+    }
+    .max{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .textDX{
+      position: absolute;
+      left: 31.1vw;
+    bottom: -2.5vh;
       z-index: 5;
       color: black;
       font-size: 35px;
     }
+
+    .text {
+      position: absolute;
+      left: -17.9vw;
+      bottom: -5vh;
+      z-index: 5;
+      color: black;
+      font-size: 35px;
+    }
+    #images {
+      width: 65vw;
+      transform: translateX(20vw);
+      height: 80vh;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
   </style>
 </head>
 <body>
@@ -35,10 +64,7 @@
     <div class="text-nav">[NOW]</div>
     <a href="index.html" class="back">[...]</a>
   </nav>
-  <div class="contain">
-    <div class="max">
-      <div id="images"></div>
-    </div>
-  </div>
+
+    <div id="images"></div>
 </body>
 </html>

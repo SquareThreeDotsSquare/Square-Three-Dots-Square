@@ -27,9 +27,9 @@ function init() {
           // Create an image element with the link as the source
           output += '<img src="' + link + '" alt="' + name + '" id="' + id + '" class="image">';
           // Create a div element with the time creation of the photo as the content
-          output += '<div id="time-' + id + '" class="time">' + modifiedTime.slice(11,16) + '</div>';
+          output += '<div id="time-' + id + '" class="' + (name === "TAIPEI.jpg" ? "timeDX" : "time") + '">' + modifiedTime.slice(11, 16) + '</div>';
           // Create a div element with the text based on the file name as the content
-          output += '<div id="text-' + id + '" class="text">';
+          output += '<div id="text-' + id + '" class="' + (name === "TAIPEI.jpg" ? "textDX" : "text") + '">';
           if (name == "ISIA.jpg") {
             output += "ISIA U";
           } else if (name == "TAIPEI.jpg") {
@@ -89,82 +89,14 @@ function init() {
         setInterval(cycleImages, 7000);
       } else {
         // No files found
-        console.log("no files",files);
+        console.log("No files", files);
       }
     });
   });
-};
+}
 // Load the client library and call init()
 gapi.load('client', init);
 
 
-
 //apiKey: 'AIzaSyAf7w7I2wXpftJm0ucqH8IkB48CJoVll1Q',
 //var folderId = '1qFgnsftB_E_E_Julg4F5XmYo8Prx_IJ7';
-
-
-//old
-// const pathImg = './images/nomeprogetto/';
-
-// /*  Mettere qui le immagini, ora e luogo 
-//     - Coppia e incolla { ---- }
-//     - Cambia con il nome di salvataggio la nuova immagine
-//     - Metti l'orario dell'immagine
-//     - Metti il luogo dell'immagine esattamente così: isia || taipei
-// */
-// const images = [
-//   {
-//     img: "nomeprogetto_0.jpeg",
-//     time: "12:30",
-//     place: "isia"
-//   },
-//   {
-//     img: "nomeprogetto_1.jpeg",
-//     time: "12:34",
-//     place: "taipei"
-//   }
-// ];
-
-
-
-
-
-// /* NNON TOCCARE */
-// const imageElement = document.getElementById("image");
-// const didaContainer = document.getElementById("dida-container");
-// const place = document.getElementById("dida-place");
-// const time = document.getElementById("dida-time");
-
-// let currentIndex = 0;
-
-// // Función para mostrar la imagen actual
-// function showCurrentImage() {
-
-//   didaContainer.classList.remove("right")
-//   didaContainer.classList.remove("left")
-//   // Actualiza la fuente de la imagen con la imagen actual
-//   imageElement.src = pathImg + images[currentIndex].img;
-//   time.innerHTML = images[currentIndex].time;
-
-//   if(images[currentIndex].place === 'isia') {
-//     didaContainer.classList.add("left")
-//     place.innerHTML = "ISIA U";
-//   } else {
-//     didaContainer.classList.add("right")
-//     place.innerHTML = "adO/Aptive";
-//   }
-
-//   // Incrementa el índice de la imagen actual
-//   currentIndex++;
-
-//   // Verifica si se ha alcanzado el final de las imágenes y reinicia el índice si es necesario
-//   if (currentIndex >= images.length) {
-//       currentIndex = 0;
-//   }
-// }
-
-// // Mostrar la primera imagen al cargar la página
-// showCurrentImage();
-
-// // Establecer la función para mostrar la imagen cada 7 segundos
-// setInterval(showCurrentImage, 7000);
