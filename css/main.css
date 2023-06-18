@@ -39,7 +39,6 @@ a:hover{
 .div-block{
     display: flex;
     justify-content: space-between;
-    font-size: 80px;
 }
 
 .text{
@@ -49,8 +48,8 @@ a:hover{
 
 .list{
     display: flex;
-    font-size: 85px;
-    line-height: 83px;
+    font-size: 8vh;
+    line-height: 9vh;
     letter-spacing: -2px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     mix-blend-mode: lighten;
@@ -58,7 +57,8 @@ a:hover{
 }
 
 .exit{
-    font-size: 90px;
+    transform: translateY(-2vh);
+    font-size: 6vh;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     line-height: 93px;
     letter-spacing: -2px;
@@ -101,15 +101,27 @@ a:hover{
     text-align: justify;
 }
 
+/* grid manifesto */
+
+.grid-manifesto{
+    display: grid;
+    gap: 0.5vh;
+    grid-template-columns: 30vw 1fr;
+}
+
+.takeAll{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2.3vw;
+}
+
 .indented-text {
-    text-indent: 465px; /* Regola l'indentazione desiderata in pixel */
-    margin-left: 28px;
+    grid-column-start: 2;
     margin-right: 28px;
     color: #000;
     font-family: 'custom', sans-serif;
-    font-size: 53px;
+    font-size: 2.3vw;
     line-height: 56px;
-    text-align: justify;
 }
 .heading-text{
 font-family: 'custom', sans-serif;
@@ -118,10 +130,9 @@ color: #fff;
 letter-spacing: -2.5px;
 -webkit-text-stroke-width: 2px;
 -webkit-text-stroke-color: black;
-margin-left: 28px;
 margin-right: 28px;
 margin-bottom: -53px;
-font-size: 53px;
+font-size: 2.3vw;
 font-weight: 400;
 line-height: 56px;
 position: static;
@@ -136,14 +147,15 @@ position: static;
     font-size: 53px;
     line-height: 56px;
 }
-
 li{
     font-family: 'custom', sans-serif;
     line-height: 56px;
     letter-spacing: -2.2px;
     font-size: 53px;
-    text-indent: 400px;
-    text-align: justify;
+}
+
+.lista > li{
+    grid-column-start: 2;
 }
 
 .lista{
@@ -153,7 +165,12 @@ li{
 }
 
 .video{
-    margin-top: 90px;
+    margin-top: 120px;
+    transform: translateX(6vw);
+}
+
+#tool-video{
+    width: 60vw;
 }
 
 .body-pages{
@@ -167,10 +184,11 @@ li{
 .contacts{
     font-family: 'custom', sans-serif;
     display: flex;
-    margin-left: 500px;
-    padding-top: 70px;
-    font-size: 53px;
-    line-height: 56px;
+    transform: translateX(32vw);
+    padding-top: 90px;
+    padding-bottom: 30px;
+    font-size: 33px;
+    line-height: 40px;
     letter-spacing: -2.2px;
 }
 
@@ -205,6 +223,7 @@ li{
 .archive-container {
     font-size: 28px;
     padding-top: 120px;
+    padding-bottom: 80px;
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
@@ -213,7 +232,8 @@ li{
   }
   
 .img-hover{
-    width: 100%;
+    width: 90%;
+    height: 600px;
     object-fit: contain;
 }
 
@@ -222,23 +242,48 @@ li{
 }
 
 .cardSX{
-    transform: translateX(-330px);
+    transform: translateX(-27vw);
     width: 600px;
     display: none;
 }
 
 .cardDX{
-    transform: translateX(-160px);
+    transform: translateX(-9vw);
     width: 500px;
     display: none;
 }
 
+#event-title{
+    transform: translateX(1.8vw);
+}
 
 
-/*@media only screen and (max-width: 1000px) {
-    .text{
-        font-size: 3px;
-        background-color: aqua;
+/* MOBILE */
+
+@media only screen and (max-width: 450px) {
+    /*home*/
+    .list > a{
+        font-size: 6vh;
     }
-  }
-*/
+    .exit{
+        transform: translateY(-4vh);
+        font-size: 5vh;
+    }
+
+    .list{
+        font-size: 5vh;
+        line-height: 6vh;
+    }
+
+    /* nav */
+    .text-nav{
+        font-size: 6vh;
+    }
+    .back{
+        font-size: 6vh;
+    }
+    .container-nav{
+        margin-top: 0.1vh;
+        width: 100vw;
+    }
+}
