@@ -151,16 +151,20 @@ li{
     font-family: 'custom', sans-serif;
     line-height: 56px;
     letter-spacing: -2.2px;
-    font-size: 53px;
+    font-size: 20px;
 }
 
-.lista > li{
-    grid-column-start: 2;
+li.indented-text::marker{
+    transform: translateX(-300px);
+}
+
+ol {
+    grid-column-start: 1;
 }
 
 .lista{
     font-family: 'custom', sans-serif;
-    margin-left: 70px;
+    grid-column-start: 2;
     text-align: justify;
 }
 
