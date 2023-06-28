@@ -303,6 +303,32 @@ position: static;
 }
 
 
+/* GALLERY */
+
+.gallery-grid{
+    padding-top: 10vh;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+}
+
+.event{
+    font-size: 2vw;
+    grid-column-start: 2;
+}
+
+.container-slide{
+    display: flex;
+    gap: 10px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: red;
+}
+
+
+.card-img>img{
+    width: 350px;
+}
 /* MOBILE */
 
 @media only screen and (max-width: 450px) {

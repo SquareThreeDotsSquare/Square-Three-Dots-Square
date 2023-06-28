@@ -8,6 +8,11 @@ function toggleImageDX(element) {
   cardDX.style.display = cardDX.style.display === "none" ? "block" : "none";
 }
 
+function galleryToggle(element) {
+  var slide = document.getElementById("event")
+  slide.style.display = slide.style.display === "none" ? "block" : "none";
+}
+
 /*** per tabella ***/
 
 // Function to fetch images and descriptions from Google Drive
