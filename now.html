@@ -10,12 +10,21 @@
       object-fit: cover;
     }
     .time {
-      position: absolute;
-      bottom: -2.5vh;
-      left: 11vw;
+      position: fixed;
+      bottom: -4vw;
+      left: 30vw;
       flex-direction: row;
       color: black;
       font-size: 34px;
+    }
+    
+    .text {
+      position: fixed;
+      bottom: -4vw;
+      left: -18vw;
+      z-index: 5;
+      color: black;
+      font-size: 35px;
     }
     .timeDX{
       position: absolute;
@@ -38,20 +47,11 @@
       color: black;
       font-size: 35px;
     }
-
-    .text {
-      position: absolute;
-      left: -17.9vw;
-      bottom: -5vh;
-      z-index: 5;
-      color: black;
-      font-size: 35px;
-    }
     #images {
       width: 65vw;
       transform: translateX(20vw);
       height: 80vh;
-      padding-top: 120px;
+      padding-top: 7vw;
       display: flex;
       flex-direction: row;
       justify-content: center;
