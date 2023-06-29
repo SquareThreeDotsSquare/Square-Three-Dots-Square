@@ -12,7 +12,7 @@
 }
 
 html{
-    font-family: 'custopm', sans-serif;
+    font-family: 'custom', sans-serif;
 }
 
 a{
@@ -25,14 +25,20 @@ a:hover{
 }
 
 .homeLay{
-    margin: 28px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 94vh;
-    font-size: 90px;
-    line-height: 93px;
+    font-size: 70px;
+    line-height: 8.5vh;
     letter-spacing: -2px;
+
+
+    margin-left: 15px;
+    margin-right: 15px;
+    position: fixed;
+    width: 98%;
 }
 
 .div-block{
@@ -41,24 +47,26 @@ a:hover{
 }
 
 .text{
-    font-size: 85px;
-    line-height: 83px;
+    font-size: 70px;
+    line-height: 8.5vh;
+    letter-spacing: -2px;
 }
 
 .list{
     display: flex;
     font-size: 70px;
-    line-height: 6.5vh;
+    line-height: 8.5vh;
     letter-spacing: -2px;
     mix-blend-mode: lighten;
     flex-direction: column;
 }
 
 .exit{
+    margin-top: 15px;
     transform: translateY(-2vh);
-    font-size: 6vh;
-    line-height: 93px;
+    font-size: 70px;
     letter-spacing: -2px;
+    margin-right: 1px;
     font-feature-settings: "ss02" 1;
 }
 
@@ -82,7 +90,7 @@ a:hover{
     -webkit-text-fill-color: white;
     font-feature-settings: "ss02" 1;
     line-height: 93px;
-    font-size: 75px;
+    font-size: 70px;
     letter-spacing: -2px;
 }
 
@@ -99,7 +107,7 @@ a:hover{
 .grid-manifesto{
     display: grid;
     gap: 0.5vh;
-    padding: 0px 2vw 0px 2vw;
+    padding: 0px 1.4vw 0px 1.4vw;
     grid-template-columns: 30vw 1fr;
 }
 
@@ -110,6 +118,7 @@ a:hover{
     line-height: 2.3vw;
     letter-spacing: -1.8px;
     text-align: justify;
+    font-weight: 400;
 }
 
 #gap-para{
@@ -128,6 +137,20 @@ a:hover{
     font-family: 'custom', sans-serif;
     font-size: 2.3vw;
     line-height: 2.3vw;
+    letter-spacing: -1.8px;
+    font-weight: 400;
+}
+.indented-text-inside{
+    grid-column-start: 2;
+    text-align: justify;
+    margin-right: 28px;
+    margin-left: 37px;
+    color: #000;
+    font-family: 'custom', sans-serif;
+    font-size: 2.3vw;
+    line-height: 2.3vw;
+    letter-spacing: -1.8px;
+    font-weight: 400;
 }
 .heading-text{
 font-family: 'custom', sans-serif;
@@ -142,11 +165,16 @@ margin-bottom: -53px;
 font-size: 2.3vw;
 font-weight: 400;
 line-height: 2.3vw;
+letter-spacing: -1.8px;
 position: static;
 }
 
 .nr-list , .text-list{
     font-size: 2.3vw;
+    line-height: 2.3vw;
+    letter-spacing: -1.8px;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .list-text{
@@ -156,8 +184,9 @@ position: static;
     margin-right: 28px;
     color: #000;
     font-family: 'custom';
-    font-size: 53px;
-    line-height: 56px;
+    font-size: 2.3vw;
+    line-height: 2.3vw;
+    letter-spacing: -1.8px;
 }
 
 .lista{
@@ -264,7 +293,6 @@ position: static;
 
 }
 
-
 .archive-container {
     font-size: 28px;
     padding-top: 120px;
@@ -302,6 +330,7 @@ position: static;
 
 #event-title{
     transform: translateX(1.8vw);
+    grid-column-start: 1;
 }
 
 
@@ -378,7 +407,15 @@ position: static;
 
     /* nav */
     .text-nav{
-        font-size: 6vh;
+        font-family: 'custom', sans-serif;
+        text-indent: 28px; /* Regola l'indentazione desiderata in pixel */
+        margin-left: 28px;
+        margin-right: 28px;
+        color: #000;
+        font-family: 'custom';
+        font-size: 2.3vw;
+        line-height: 2.3vw;
+        letter-spacing: -1.8px;
     }
     .back{
         font-size: 6vh;
