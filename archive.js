@@ -9,10 +9,17 @@ function toggleImageDX(element) {
 }
 
 function galleryToggle(element) {
-  var slide = document.getElementById("event")
-  slide.style.display = slide.style.display === "none" ? "block" : "none";
+  var galleryGrid = element.nextElementSibling;
+  galleryGrid.classList.toggle("show");
 }
 
+// Hide all gallery grids initially
+document.addEventListener("DOMContentLoaded", function() {
+  var galleryGrids = document.querySelectorAll(".gallery-grid");
+  for (var i = 0; i < galleryGrids.length; i++) {
+    galleryGrids[i].classList.remove("show");
+  }
+});
 /*** per tabella ***/
 
 // Function to fetch images and descriptions from Google Drive
