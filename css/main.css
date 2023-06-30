@@ -335,13 +335,13 @@ position: static;
 }
 
 .cardSX{
-    text-align: left;
+    text-align: right;
     transform: translateX(-20vw);
     width: 47vw;
     display: none;
 }
 .cardDX{
-    text-align: right;
+    text-align: left;
     transform: translateX(-22vw);
     width: 49vw;
     display: none;
