@@ -341,7 +341,7 @@ position: static;
     display: none;
 }
 .cardDX{
-    text-align: left;
+    text-align: right;
     transform: translateX(-22vw);
     width: 49vw;
     display: none;
